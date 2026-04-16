@@ -5,3 +5,12 @@ int element [10];
 int nPanjang;
 int x;
 
+void input()
+{  
+        while (true)
+        {
+                cout << "Masukkan banyaknya elemen ada array (maksimal 10): ";
+                cin >> nPanjang;
+
+        }
+}
