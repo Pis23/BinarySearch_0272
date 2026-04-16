@@ -23,7 +23,7 @@ void input()
         }
 
         cout << "\n===============\n";
-        cout << "   Masukkan Elemen Array   "
+        cout << "   Masukkan Elemen Array   ";
         cout << "\n===============\n";
 
         for (int i = 0; i < nPanjang; i++)
@@ -72,9 +72,9 @@ void binarySearch()
     char ulang;
     do
     {
-        cout << "\n===========\n"
+        cout << "\n===========\n";
         cout << "   Pencarian Binary Search \n";
-        cout << "\n===========\n"
+        cout << "\n===========\n";
 
         cout << "Masukkan elemen yang ingin dicari: ";
         cin >> x;
@@ -110,8 +110,16 @@ void binarySearch()
         }
 
         cout << "\nIngin mencaari lagi? : y/n";
-        cin >> ulang
-    } while (ulang == "y" || ulang == "Y");
+        cin >> ulang;
+    } while (ulang == 'y' || ulang == 'Y');
         
     
+}
+
+int main()
+{
+    input();
+    bubbleSortArray();
+    display();
+    binarySearch();
 }
